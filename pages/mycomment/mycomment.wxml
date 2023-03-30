@@ -1,0 +1,16 @@
+<!-- 评论 -->
+<view class="div">
+  <view class="comment">
+    <view>我的评论</view>
+    <view class="line"></view>
+    <view class="comment-detail">
+      <block wx:for="{{commentDetail}}" wx:key="i">
+        <text>{{item.commentsInfo}}</text>
+        <view class="comment-btm">
+          <text>{{item.bookName}}</text>
+          <text>{{item.commentsDate}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

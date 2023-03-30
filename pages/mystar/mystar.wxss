@@ -1,0 +1,33 @@
+.table {
+  font-size: 30rpx;
+  border: 0px solid darkgray;
+ }
+ .tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 6rem;
+  align-items: center;
+ }
+ .td {
+  width:40%;
+  justify-content: center;
+  text-align: center;
+ }
+ .bg-w{
+  display: flex;
+  justify-content: center;
+  background: snow;
+ }
+ .bg-g{
+  background: #E6F3F9;
+ }
+ .th {
+  width: 40%;
+  justify-content: center;
+  background-color: #5082ce;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+ }

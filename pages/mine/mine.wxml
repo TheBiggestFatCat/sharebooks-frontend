@@ -1,0 +1,13 @@
+<view class="div">
+  <view class="top">
+    <view class="circle"><image class="circle-img" src="{{avatarUrl}}"></image></view>
+    <view class="userid">{{nickName}}</view>
+  </view>
+  <view class="menu" hover-class="menu-hover" catchtap="gotoMycomment"><image src="../../assets/images/book.svg" style="width: 36rpx; height: 36rpx; position: relative; top: 6rpx; margin-right: 10rpx;" alt=""/>  我的评论</view>
+  <view class="menu" hover-class="menu-hover" catchtap="gotoMyshare"><image src="../../assets/images/book-open.svg" style="width: 36rpx; height: 36rpx; position: relative; top: 6rpx; margin-right: 10rpx;" alt=""/>  我的分享</view>
+  <view class="menu" hover-class="menu-hover" catchtap="gotoMystar"><image src="../../assets/images/star.svg"  style="width: 36rpx; height: 36rpx; position: relative; top: 6rpx; margin-right: 10rpx;" alt=""/>  我的收藏</view>
+  <view class="menu" hover-class="menu-hover" catchtap="gotoLocation"><image src="../../assets/images/map-pin.svg"  style="width: 36rpx; height: 36rpx; position: relative; top: 6rpx; margin-right: 10rpx;" alt=""/>  分享地址</view> 
+  <button wx:if="{{!logined}}" class="login-btn" catchtap="login" style="width: 640rpx;">登 录</button>
+  <view>
+  </view>
+</view>

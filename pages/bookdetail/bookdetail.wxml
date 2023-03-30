@@ -1,0 +1,44 @@
+<view class="div">
+  <view class="top">
+    <image src="{{bookFilePath}}"></image>
+    <view class="right">
+      <text>{{bookName}}</text>
+      <text>作者：{{bookAuthor}}</text>
+      <text>分享者：{{shareName}}</text>
+      <text>地址：{{shareWhere}}</text>
+      <!-- 操作 -->
+      <view class="op">
+        <view class="com-btn">
+          <image class="icon" src="../../assets/images/comment.svg" catchtap="comment" alt=""/>
+        </view>
+        <view class="star-btn">
+          <image class="icon" src="../../assets/images/star.svg" style="position: relative; bottom: 2rpx" catchtap="star"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 简介 -->
+  <view class="info">
+    <view>内容简介</view>
+    <view class="line"></view>
+    <text>{{bookInformation}}</text>
+  </view>
+  <!-- 借阅 -->
+  <view class="borrow">
+    <button class="borrow-btn" style="width: 180rpx; height: 80rpx;">立即借阅</button>
+  </view>
+  <!-- 评论 -->
+  <view class="comment">
+    <view>评论</view>
+    <view class="line"></view>
+    <view class="comment-detail">
+      <block wx:for="{{commentDetail}}" wx:key="item">
+        <text>{{item.commentsInfo}}</text>
+        <view class="comment-btm">
+          <text>{{item.commentsName}}</text>
+          <text>{{item.commentsDate}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

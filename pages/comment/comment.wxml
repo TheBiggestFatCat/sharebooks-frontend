@@ -1,0 +1,13 @@
+<view class="div">
+  <view>
+    <text>留下你的看法...</text>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view class="add-text">
+      <textarea bindblur="bindTextAreaBlur" placeholder="请输入" value="{{value}}" />
+    </view>
+    <view class="insert-button">
+      <button formType="submit">提交</button>
+    </view>
+  </form>
+</view>

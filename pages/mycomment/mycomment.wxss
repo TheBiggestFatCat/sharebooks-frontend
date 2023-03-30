@@ -1,0 +1,20 @@
+.div {
+  font-size: 30rpx;
+  padding: 40rpx 40rpx 100rpx 40rpx;
+}
+
+.line {
+  width: 670rpx;
+  border-top: 1px solid #ccc;
+  margin: 30rpx 0 30rpx 0;
+}
+
+/* 评论 */
+.comment-btm {
+  color: rgb(75, 75, 75);
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  margin-top: 30rpx;
+  margin-bottom: 60rpx;
+}

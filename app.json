@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/share/share",
+    "pages/location/location",
+    "pages/apply/apply",
+    "pages/mystar/mystar",
+    "pages/myshare/myshare",
+    "pages/bookdetail/bookdetail",
+    "pages/mycomment/mycomment",
+    "pages/comment/comment",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5082ce",
+    "navigationBarTitleText": "共享书籍",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#5082ce",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "assets/images/home.png",
+        "iconPath": "assets/images/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "assets/images/book-open.png",
+        "iconPath": "assets/images/book-open.png",
+        "pagePath": "pages/share/share",
+        "text": "分享"
+      },
+      {
+        "selectedIconPath": "assets/images/user.png",
+        "iconPath": "assets/images/user.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

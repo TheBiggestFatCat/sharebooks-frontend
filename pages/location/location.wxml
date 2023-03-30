@@ -1,0 +1,13 @@
+<view class="div">
+  <view>
+    <text>在这里输入你的地址，方便与他人共享书籍。</text>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view class="add-text">
+      <textarea bindblur="bindTextAreaBlur" placeholder="请输入具体地址" value="{{value}}" />
+    </view>
+    <view class="insert-button">
+      <button formType="submit">提交</button>
+    </view>
+  </form>
+</view>

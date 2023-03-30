@@ -1,0 +1,19 @@
+<view class="div">
+  <form bindsubmit="formSubmit">
+    <view>
+      <textarea placeholder='书籍名' name="bookname" class="book-name" value="{{bookName}}" bindblur="bindName" />
+      <textarea placeholder='作者' name="bookname" bindblur="bindAuthor" class="book-name" value="{{bookAuthor}}" />
+      <textarea placeholder='书籍简介' name="bookintro" bindblur="bindIntro" class="intro" value="{{bookIntro}}" />
+    </view>
+  </form>
+  <view class="upload">
+    <view>
+      <text style="font-size: 30rpx;">在这里上传封面，要求清晰无反光。</text>
+    </view>
+    <image src='{{path}}' class="upload_icon" catchtap='uploadFileTap'></image>
+  </view>
+  <view>
+    <image class="imgUpload" wx:for="{{avatarUrl}}" wx:key="unique" src="{{item}}" mode="aspecFill" />
+  </view>
+  <button class="submit" catchtap="submit" style="width: 640rpx;"> 提交 </button>
+</view>

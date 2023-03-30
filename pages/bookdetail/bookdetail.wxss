@@ -1,0 +1,78 @@
+.div {
+  font-size: 30rpx;
+  padding: 40rpx 40rpx 100rpx 40rpx;
+}
+
+.top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+image {
+  width: 200rpx;
+  height: 280rpx;
+}
+
+.right {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 400rpx;
+  height: 280rpx;
+  padding-left: 60rpx;
+  line-height: 200%;
+}
+
+.right > text:nth-of-type(1) {
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.info {
+  margin: 80rpx 0 80rpx 0;
+}
+
+.line {
+  width: 670rpx;
+  border-top: 1px solid #ccc;
+  margin: 30rpx 0 30rpx 0;
+}
+
+/* 评论 */
+.comment-btm {
+  color: rgb(75, 75, 75);
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  margin-top: 30rpx;
+  margin-bottom: 60rpx;
+}
+
+/* 下方操作 */
+.borrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.borrow-btn {
+  font-size: 28rpx;
+  border-radius: 8rpx;
+  background-color: #5082ce;
+  color: #fff;
+  line-height: 80rpx;
+  padding: 0;
+}
+
+.icon {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 60rpx;
+}
+
+.op {
+  display: flex;
+  margin-top: 30rpx;
+}

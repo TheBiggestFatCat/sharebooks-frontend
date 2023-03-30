@@ -1,0 +1,23 @@
+<view class="div">
+  <view class="table">
+ <view class="bg-w">
+ <view class="th">封面预览</view>
+ <view class="th">书籍名</view>
+ <view class="th ">操作</view>
+ </view>
+ <block wx:for="{{listData}}" wx:key="index">
+ <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+  <view class="td"><image src="{{item.bookFilePath}}" style="width: 4rem; height: 5rem;"></image></view>
+  <view class="td">{{item.bookName}}</view>
+  <view class="td"><button catchtap="lookDetail" data-index="{{item.bookCode}}" style="width: 180rpx; background-color: #5082ce; color: #fff; font-size: 28rpx; font-weight: 500; position: relative; bottom: 10rpx;">详情</button><button catchtap="delate" data-id="{{item.collectionId}}" style="width: 180rpx; background-color: #5082ce; color: #fff; font-size: 28rpx; font-weight: 500; position: relative; top: 10rpx;">删除</button></view>
+ </view>
+ <view class="tr" wx:else>
+  <view class="td"><image src="{{item.bookFilePath}}" style="width: 4rem; height: 5rem;"></image></view>
+  <view class="td">{{item.bookName}}</view>
+  <view class="td"><button catchtap="lookDetail" data-index="{{item.bookCode}}" style="width: 180rpx; background-color: #5082ce; color: #fff; font-size: 28rpx; font-weight: 500; position: relative; bottom: 10rpx;">详情</button>
+  <button catchtap="delate" data-id="{{item.collectionId}}" style="width: 180rpx; background-color: #5082ce; color: #fff; font-size: 28rpx; font-weight: 500; position: relative; top: 10rpx;">删除</button>
+  </view>
+ </view>
+ </block>
+</view>
+</view>

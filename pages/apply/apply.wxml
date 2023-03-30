@@ -1,0 +1,21 @@
+<view class="div">
+  <view class="table">
+ <view class="bg-w">
+ <view class="th">封面预览</view>
+ <view class="th">书籍名</view>
+ <view class="th ">申请状态</view>
+ </view>
+ <block wx:for="{{listData}}" wx:key="index">
+ <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+  <view class="td"><image src="{{item.bookSurface}}" style="width: 4rem; height: 5rem;"></image></view>
+  <view class="td">{{item.text}}</view>
+  <view class="td">{{item.type}}</view>
+ </view>
+ <view class="tr" wx:else>
+  <view class="td"><image src="{{item.bookSurface}}" style="width: 4rem; height: 5rem;"></image></view>
+  <view class="td">{{item.text}}</view>
+  <view class="td">{{item.type}}</view>
+ </view>
+ </block>
+</view>
+</view>
